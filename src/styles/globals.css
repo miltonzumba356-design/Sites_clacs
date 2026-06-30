@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 14px;
+  
+  /* Clacs Tecnologia Color Palette */
+  --clacs-blue: #007BFF;
+  --clacs-blue-dark: #0056B3;
+  --clacs-black-soft: #1A1A1A;
+  --clacs-text: #333333;
+  --clacs-white: #FFFFFF;
+  --clacs-bg-soft: #F5F5F5;
+  --clacs-border: #DDDDDD;
+  --clacs-alert: #FF4D4F;
+  
+  --background: var(--clacs-white);
+  --foreground: var(--clacs-text);
+  --card: var(--clacs-white);
+  --card-foreground: var(--clacs-text);
+  --popover: var(--clacs-white);
+  --popover-foreground: var(--clacs-text);
+  --primary: var(--clacs-blue);
+  --primary-foreground: var(--clacs-white);
+  --secondary: var(--clacs-bg-soft);
+  --secondary-foreground: var(--clacs-text);
+  --muted: var(--clacs-bg-soft);
+  --muted-foreground: #717182;
+  --accent: var(--clacs-blue);
+  --accent-foreground: var(--clacs-white);
+  --destructive: var(--clacs-alert);
+  --destructive-foreground: var(--clacs-white);
+  --border: var(--clacs-border);
+  --input: transparent;
+  --input-background: var(--clacs-bg-soft);
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: var(--clacs-blue);
+  --chart-1: var(--clacs-blue);
+  --chart-2: var(--clacs-blue-dark);
+  --chart-3: var(--clacs-text);
+  --chart-4: var(--clacs-bg-soft);
+  --chart-5: var(--clacs-border);
+  --radius: 0.625rem;
+  --sidebar: var(--clacs-bg-soft);
+  --sidebar-foreground: var(--clacs-text);
+  --sidebar-primary: var(--clacs-blue);
+  --sidebar-primary-foreground: var(--clacs-white);
+  --sidebar-accent: var(--clacs-white);
+  --sidebar-accent-foreground: var(--clacs-text);
+  --sidebar-border: var(--clacs-border);
+  --sidebar-ring: var(--clacs-blue);
+}
+
+.dark {
+  --background: var(--clacs-black-soft);
+  --foreground: var(--clacs-white);
+  --card: #262626;
+  --card-foreground: var(--clacs-white);
+  --popover: var(--clacs-black-soft);
+  --popover-foreground: var(--clacs-white);
+  --primary: var(--clacs-blue);
+  --primary-foreground: var(--clacs-white);
+  --secondary: #262626;
+  --secondary-foreground: var(--clacs-white);
+  --muted: #262626;
+  --muted-foreground: #A1A1AA;
+  --accent: var(--clacs-blue);
+  --accent-foreground: var(--clacs-white);
+  --destructive: var(--clacs-alert);
+  --destructive-foreground: var(--clacs-white);
+  --border: #404040;
+  --input: #262626;
+  --ring: var(--clacs-blue);
+  --sidebar: #262626;
+  --sidebar-foreground: var(--clacs-white);
+  --sidebar-primary: var(--clacs-blue);
+  --sidebar-primary-foreground: var(--clacs-white);
+  --sidebar-accent: #404040;
+  --sidebar-accent-foreground: var(--clacs-white);
+  --sidebar-border: #404040;
+  --sidebar-ring: var(--clacs-blue);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+    scroll-behavior: smooth;
+    font-size: var(--font-size);
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: inherit;
+  }
+}
+
+/**
+ * Base typography with Inter font family
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.025em;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1.3;
+      letter-spacing: -0.025em;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    h4 {
+      font-size: 1.25rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    h5 {
+      font-size: 1.125rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    h6 {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+
+    label {
+      font-size: 0.875rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+  }
+}
+
+/* Custom utility classes for Clacs branding */
+@layer utilities {
+  .text-clacs-blue {
+    color: var(--clacs-blue);
+  }
+  
+  .bg-clacs-blue {
+    background-color: var(--clacs-blue);
+  }
+  
+  .border-clacs-blue {
+    border-color: var(--clacs-blue);
+  }
+  
+  .gradient-clacs {
+    background: linear-gradient(135deg, var(--clacs-blue), var(--clacs-blue-dark));
+  }
+  
+  .shadow-clacs {
+    box-shadow: 0 4px 6px -1px rgba(0, 123, 255, 0.1), 0 2px 4px -1px rgba(0, 123, 255, 0.06);
+  }
+  
+  .transition-clacs {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

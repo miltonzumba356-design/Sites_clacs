@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://clacstecnologia.com/sitemap.xml
+
+# Disallow sensitive directories (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
