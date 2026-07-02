@@ -19,7 +19,6 @@ import {
   ShieldCheck,
   Search,
   Users,
-  Mail,
   FileText,
 } from 'lucide-react';
 
@@ -85,41 +84,6 @@ function SigadMock() {
   );
 }
 
-function NotificacaoMock() {
-  const items = [
-    { name: 'Ana Kiala', status: 'Enviado' },
-    { name: 'João Manuel', status: 'Enviado' },
-    { name: 'Beatriz Neto', status: 'A processar' },
-    { name: 'Carlos Sami', status: 'Enviado' },
-  ];
-  return (
-    <div className="flex-1 space-y-3">
-      <div className="bg-white rounded-lg border border-gray-200 p-3">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-[11px] font-semibold text-gray-700">Envio de recibos — Julho 2026</span>
-          <span className="text-[10px] text-green-600 font-medium">86%</span>
-        </div>
-        <div className="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden">
-          <div className="h-full bg-green-500 rounded-full" style={{ width: '86%' }} />
-        </div>
-      </div>
-      <div className="bg-white rounded-lg border border-gray-200 p-3 space-y-2">
-        {items.map((it, i) => (
-          <div key={i} className="flex items-center justify-between text-[11px]">
-            <div className="flex items-center gap-2 text-gray-700">
-              <Mail className="h-3.5 w-3.5 text-gray-400" />
-              {it.name}
-            </div>
-            <span className={`text-[10px] font-medium ${it.status === 'Enviado' ? 'text-green-600' : 'text-amber-600'}`}>
-              {it.status}
-            </span>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
 const products = [
   {
     icon: Archive,
@@ -154,8 +118,8 @@ const products = [
     tagline: 'Acabe com a fila na receção só para entregar recibos de vencimento.',
     description: 'Recibos de vencimento gerados e enviados automaticamente por e-mail, Whatsapp sem trabalho manual do RH.',
     color: 'from-emerald-500 to-emerald-600',
-    url: 'App de Secretária · Notificação9',
-    mock: <NotificacaoMock />,
+    url: 'paysend.clacstecnologia.com',
+    bgImage: '/products/paysend-bg.png',
   },
 ];
 
