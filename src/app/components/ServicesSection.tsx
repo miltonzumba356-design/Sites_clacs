@@ -88,7 +88,7 @@ export function ServicesSection() {
             <span className="block text-primary">Tecnologia Empresarial</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Especializados em ERP Primavera e soluções tecnológicas integradas, 
+            Especializados em Consultoria e Suporte em ERP Primavera e soluções tecnológicas integradas,
             oferecemos o suporte completo que sua empresa precisa para crescer.
           </p>
         </div>

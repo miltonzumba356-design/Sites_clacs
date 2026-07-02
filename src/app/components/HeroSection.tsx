@@ -37,8 +37,8 @@ export function HeroSection() {
               </h1>
               
               <p className="text-xl md:text-2xl text-gray-700 leading-relaxed mx-auto">
-                Há mais de 7 anos oferecemos soluções completas em <strong>ERP Primavera</strong>,
-                desenvolvimento web e serviços de informática para empresas que buscam crescimento.
+                Há mais de 7 anos oferecemos soluções completas de consultoria e Suporte em <strong>ERP Primavera</strong>,
+                desenvolvimento web e serviços de informática para empresas que buscam valores agregados e crescimento contínuo.
               </p>
             </div>
 

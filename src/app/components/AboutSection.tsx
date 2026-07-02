@@ -76,13 +76,13 @@ export function AboutSection() {
             Sobre a CLACS
           </Badge>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-            Especialistas em
+            Especialistas em Consultoria e Suporte em
             <span className="block text-primary">ERP Primavera desde 2018</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
             A CLACS Tecnologia é uma empresa angolana que se dedica ao desenvolvimento
-            de soluções tecnológicas inovadoras, especializada em ERP Primavera,
-            desenvolvimento web e serviços de informática.
+            de soluções tecnológicas inovadoras, especializada em Consultoria e Suporte do
+            ERP Primavera, desenvolvimento web e serviços de informática.
           </p>
         </div>
 
@@ -102,7 +102,7 @@ export function AboutSection() {
               Nossa História
             </h3>
             <p className="text-gray-600 leading-relaxed">
-              Fundada por profissionais com vasta experiência em tecnologia, a CLACS nasceu da visão de democratizar o acesso a soluções tecnológicas de alta qualidade para empresas de todos os portes no mercado angolano.
+              Seu principal foco assenta em levar aos seus clientes soluções e ideias inovadoras, transformando a gestão empresarial em processos simplificados através de implementações precisas, de fácil uso e suporte especializado.
             </p>
             <p className="text-gray-600 leading-relaxed">
               Com foco especial no ecossistema Primavera, transformamos a gestão empresarial através de implementações precisas e suporte especializado.

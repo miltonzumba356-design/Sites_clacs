@@ -65,7 +65,7 @@ export function Footer() {
             </div>
 
             <p className="text-gray-300 mb-6 leading-relaxed">
-              Especialistas em ERP Primavera desde 2018. Oferecemos soluções
+              Especialistas em Consultoria e Suporte em ERP Primavera desde 2018. Oferecemos soluções
               completas em tecnologia empresarial, desenvolvimento web e serviços de informática.
             </p>
 
