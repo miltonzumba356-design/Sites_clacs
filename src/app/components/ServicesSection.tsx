@@ -21,7 +21,6 @@ export function ServicesSection() {
       title: 'Software Primavera',
       description: 'Soluções completas em ERP Primavera para otimizar a gestão empresarial com consultoria especializada.',
       features: [
-        'Comercialização de Licenças dos Módulos do ERP Primavera',
         'Consultoria no ERP Primavera',
         'Instalação e Parametrização do ERP Primavera',
         'Formação Módulos ERP Primavera',
@@ -60,8 +59,8 @@ export function ServicesSection() {
   const highlights = [
     {
       icon: Award,
-      title: 'Parceiro Oficial Primavera',
-      description: 'Certificação oficial para implementação e suporte do ERP Primavera'
+      title: 'ERP Primavera',
+      description: 'Implementação e suporte do ERP Primavera.'
     },
     {
       icon: Users,
@@ -88,7 +87,7 @@ export function ServicesSection() {
             <span className="block text-primary">Tecnologia Empresarial</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Especializados em Consultoria e Suporte em ERP Primavera e soluções tecnológicas integradas,
+            Especializados em Soluções Empresariais Tecnológicas,
             oferecemos o suporte completo que sua empresa precisa para crescer.
           </p>
         </div>
